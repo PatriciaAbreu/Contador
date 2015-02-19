@@ -49,6 +49,9 @@
     return girl;
 }
 
+-(int)getTotal{
+    return boy + girl;
+}
 
 
 @end
