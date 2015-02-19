@@ -8,6 +8,7 @@
 
 @interface Contador : NSObject 
 
++(Contador *) contador;
 - (void)maisUmCueca;
 - (void)maisUmaGata;
 

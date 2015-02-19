@@ -19,7 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    contador = [[Contador alloc] init];
+    contador = [Contador contador];
 }
 
 
@@ -33,6 +33,7 @@
     _totalBoys.text = [NSString stringWithFormat: @"%d", [contador getBoys]];
     _totalGirls.text = [NSString stringWithFormat: @"%d", [contador getGirls]];
     _total.text = [NSString stringWithFormat:@"%d", [contador getGirls] + [contador getBoys] ];
+
 }
 
 
