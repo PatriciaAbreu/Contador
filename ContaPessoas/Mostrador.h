@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+//interface
 @protocol MostradorDelegate <NSObject>
 
 -(void)atualiza;

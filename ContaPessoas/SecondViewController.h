@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Mostrador.h"
 
+//o esteriotipo informa que o SecondViewController implementa a interface MostradorDelegate
 @interface SecondViewController : UIViewController<MostradorDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *totalBoys;
