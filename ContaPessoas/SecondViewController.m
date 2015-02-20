@@ -8,6 +8,7 @@
 
 #import "SecondViewController.h"
 #import "Contador.h"
+#import "Mostrador.h"
 
 @interface SecondViewController () {
       Contador *contador;
@@ -20,8 +21,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     contador = [Contador contador];
+    contador.mostradorDelegate = self;
+    [self atualiza];
 }
 
+//Não é delegate mas soluciona o problema
+//-(void) viewDidAppear:(BOOL)animated{
+//    [self click:self];
+//}
 
 
 - (void)didReceiveMemoryWarning {
@@ -34,6 +41,12 @@
     _totalGirls.text = [NSString stringWithFormat: @"%d", [contador getGirls]];
     _total.text = [NSString stringWithFormat:@"%d", [contador getTotal] ];
 
+}
+
+-(void)atualiza{
+    _totalBoys.text = [NSString stringWithFormat: @"%d", [contador getBoys]];
+    _totalGirls.text = [NSString stringWithFormat: @"%d", [contador getGirls]];
+    _total.text = [NSString stringWithFormat:@"%d", [contador getTotal] ];
 }
 
 

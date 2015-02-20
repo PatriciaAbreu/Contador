@@ -52,6 +52,7 @@
 		27A199D21A94D1FA008DC684 /* Contador.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contador.m; sourceTree = "<group>"; };
 		27A199D41A94D22B008DC684 /* Contador.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Contador.h; sourceTree = "<group>"; };
 		27A199D51A94D821008DC684 /* ContadorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContadorTests.m; sourceTree = "<group>"; };
+		4D4EDB891A97934400145B42 /* Mostrador.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mostrador.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +107,7 @@
 				27A199B51A94B2A8008DC684 /* LaunchScreen.xib */,
 				27A199A31A94B2A8008DC684 /* Supporting Files */,
 				27A199D21A94D1FA008DC684 /* Contador.m */,
+				4D4EDB891A97934400145B42 /* Mostrador.h */,
 				27A199D41A94D22B008DC684 /* Contador.h */,
 			);
 			path = ContaPessoas;
@@ -438,6 +440,7 @@
 				27A199C81A94B2A8008DC684 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27A199C91A94B2A8008DC684 /* Build configuration list for PBXNativeTarget "ContaPessoasTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +449,7 @@
 				27A199CB1A94B2A8008DC684 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

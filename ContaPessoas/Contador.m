@@ -10,11 +10,11 @@
 #import <Foundation/Foundation.h>
 #import "Contador.h"
 
-
 @implementation Contador {
     int boy;
     int girl;
 }
+@synthesize mostradorDelegate;
 
  static Contador *contador = nil;
 
@@ -24,6 +24,19 @@
     }
     return contador;
 }
+
+
+//Outro modo de fazer o Singleton
+
+//(Contador *) instance{
+//static Contador *sharedContador = nil;
+//static dispatch_once_t onceToken;
+//dispatch_once(&onceToken,
+//              {
+//                  sharedContador = [[self alloc] init];
+//              });
+//return sharedContador;
+//}
 
 -(id)init {
     self = [super init];
@@ -35,10 +48,12 @@
 }
 
 - (void)maisUmCueca {
-    boy = boy + 1;
+    boy ++;
+    [mostradorDelegate atualiza];
 }
 - (void)maisUmaGata {
     girl++;
+    [mostradorDelegate atualiza];
 }
 
 -(int)getBoys {
