@@ -14,6 +14,7 @@
     int boy;
     int girl;
 }
+
 @synthesize mostradorDelegate;
 
  static Contador *contador = nil;
@@ -49,10 +50,12 @@
 
 - (void)maisUmCueca {
     boy ++;
+//    informa o delegate que os dados foram atualizados
     [mostradorDelegate atualiza];
 }
 - (void)maisUmaGata {
     girl++;
+//    informa o delegate que os dados foram atualizados
     [mostradorDelegate atualiza];
 }
 

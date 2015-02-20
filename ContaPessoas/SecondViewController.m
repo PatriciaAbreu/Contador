@@ -22,6 +22,7 @@
     [super viewDidLoad];
     contador = [Contador contador];
     contador.mostradorDelegate = self;
+//    faz atualizar as informaçoes do second view na primeira vez que entra nele
     [self atualiza];
 }
 
@@ -43,6 +44,7 @@
 
 }
 
+//implementa o metodo declarado no MostradorDelegate, pois é uma interface e o second view implementa essa classe
 -(void)atualiza{
     _totalBoys.text = [NSString stringWithFormat: @"%d", [contador getBoys]];
     _totalGirls.text = [NSString stringWithFormat: @"%d", [contador getGirls]];
